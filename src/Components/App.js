@@ -9,9 +9,7 @@ const App = () => {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const addFeedback = (e) => {
-    const { name } = e.target;
-
+  const addFeedback = (name) => {
     switch (name) {
       case "good":
         setGood((state) => state + 1);
